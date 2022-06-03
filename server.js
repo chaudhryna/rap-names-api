@@ -39,6 +39,6 @@ app.get('/api/:name', (req, res) => {
     }
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
